@@ -6,11 +6,12 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 header {
   position: fixed;
-  height: calc(80px - 1px);
+  height: 80px;
   top: 0;
   left: 0;
   right: 0;
@@ -45,16 +46,19 @@ a:active {
 }
 
 main {
-  position: relative;
-  left: 250px;
-  top: 0;
-  z-index: 0;
-  margin-top: 100px;
-  padding-bottom: 20px;
+  margin-left: 300px;
+  margin-top: 120px;
+  padding-bottom: 30px;
   width: 1000px;
 }
 
-h2 {
+.div-head {
+  position: sticky;
+  top: 80px;
+  background: #590bff;
+  border-top: 10px solid white;
+  color: white;
+  width: 100%;
   padding-left: 10px;
 }
 
@@ -65,22 +69,17 @@ ul {
   margin-block-end: 0.5em;
   font-size: 20px;
 }
+
 li::first-letter {
   font-weight: 700;
 }
-.div-head {
-  position: sticky;
-  top: 80px;
-  background: #590bff;
-  color: white;
-  width: 100%;
-}
+
 footer {
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
-  height: 20px;
+  height: 30px;
   background: #590bff;
   text-align: center;
+  font-size: 18px;
 }
