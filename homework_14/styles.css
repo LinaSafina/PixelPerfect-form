@@ -118,6 +118,14 @@ h1 {
   width: calc(180px - 12px);
 }
 
+.button:hover {
+  background-color: rgba(26, 34, 107, 0.8);
+}
+
+button:active {
+  background-color: #b5b7c9;
+  color: rgba(5, 9, 43, 0.8);
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .container {
     margin: 2vw;
