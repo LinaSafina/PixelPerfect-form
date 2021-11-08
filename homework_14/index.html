@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form Style</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Вход</h1>
+      <form class="form">
+        <div class="form__wrapper">
+          <label class="form__label" for="email">Email</label>
+          <input
+            class="form__input"
+            placeholder="Введите пароль"
+            type="text"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="password">Пароль</label>
+          <input
+            class="form__input"
+            placeholder="Введите пароль"
+            type="password"
+            name="password"
+            id="password"
+            required
+          />
+        </div>
+        <div class="form__wrapper form__wrapper_position_relative">
+          <input
+            class="form__input form__input_checkbox"
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+          />
+          <div class="form__checkbox-mark"></div>
+          <label class="form__label form__label_checkbox" for="checkbox"
+            >Я согласен получать обновления на почту</label
+          >
+        </div>
+        <div class="form__wrapper">
+          <button class="button">Войти</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
