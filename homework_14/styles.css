@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
-  box-sizing: border-box;
 }
 
 body {
@@ -41,7 +44,7 @@ h1 {
 }
 
 .form__input {
-  width: calc(509px - 19px);
+  width: 509px;
   border-radius: 10px;
   border: 2px solid #787878;
   padding: 7px 0 6px 15px;
@@ -88,8 +91,8 @@ h1 {
 }
 
 .form__checkbox-mark {
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   border-radius: 7px;
   border: 2px solid #787878;
   margin: 0;
@@ -127,44 +130,49 @@ button:active {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .container {
-    margin: 2vw;
+    margin: 20px;
     width: 100%;
-    height: calc(100vh - 4vw);
-    border-radius: 1.5em;
-    min-height: 280px;
+    height: calc(100vh - 40px);
+    border-radius: 40px;
+    min-height: 440px;
   }
 
   h1 {
-    font-size: 10vh;
-    margin-top: 5vh;
-    margin-bottom: 1vh;
+    /* font-size: 10vh; */
+    /* margin-top: 5vh; */
+    margin-top: 38px;
+    /* margin-bottom: 1vh; */
+    margin-bottom: 0;
   }
 
   .form {
-    height: auto;
+    height: calc(100vh - 108px);
   }
 
   .form__label {
-    font-size: 5wh;
-    margin-bottom: 0.2vh;
+    /* font-size: 5wh; */
+    /* margin-bottom: 0.2vh; */
+    margin-bottom: 6px;
   }
 
   .form__input {
     width: calc(100% - 90px);
-    height: 5vh;
-    border-radius: 0.5em;
-    font-size: 1em;
+    /* height: 5vh; */
+    border-radius: 10px;
+    /* font-size: 1em; */
   }
+
   .form__label_checkbox {
-    font-size: 1em;
-    margin-bottom: 1vh;
-    margin-right: 45px;
+    /* font-size: 1em; */
+    margin-top: 27px;
+    /* margin-right: 45px; */
   }
 
   .form__checkbox-mark {
-    height: 1em;
-    width: 1em;
-    border-radius: 2px;
+    height: 32px;
+    width: 32px;
+    border-radius: 7px;
+    margin-top: 19px;
   }
 
   .form__input:checked + .form__checkbox-mark::after {
@@ -172,10 +180,12 @@ button:active {
   }
 
   .button {
-    font-size: 2em;
-    padding: 0.2em 1em;
-    margin-top: auto;
-    margin-bottom: 1vh;
-    border-radius: 0.5em;
+    /* font-size: 2em; */
+    /* padding: 0.2em 1em; */
+    height: 80px;
+    width: 220px;
+    /* margin-top: auto; */
+    margin-top: 64px;
+    /* margin-bottom: 1vh; */
   }
 }
