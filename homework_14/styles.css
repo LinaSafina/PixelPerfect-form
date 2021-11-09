@@ -106,7 +106,7 @@ h1 {
   display: block;
   content: "✔";
   color: #787878;
-  margin: 5px 0 0 4px;
+  margin-left: 3px;
 }
 
 .button {
@@ -138,10 +138,7 @@ button:active {
   }
 
   h1 {
-    /* font-size: 10vh; */
-    /* margin-top: 5vh; */
     margin-top: 38px;
-    /* margin-bottom: 1vh; */
     margin-bottom: 0;
   }
 
@@ -150,22 +147,16 @@ button:active {
   }
 
   .form__label {
-    /* font-size: 5wh; */
-    /* margin-bottom: 0.2vh; */
     margin-bottom: 6px;
   }
 
   .form__input {
     width: calc(100% - 90px);
-    /* height: 5vh; */
     border-radius: 10px;
-    /* font-size: 1em; */
   }
 
   .form__label_checkbox {
-    /* font-size: 1em; */
     margin-top: 27px;
-    /* margin-right: 45px; */
   }
 
   .form__checkbox-mark {
@@ -176,16 +167,13 @@ button:active {
   }
 
   .form__input:checked + .form__checkbox-mark::after {
-    margin: 0;
+    margin-left: 4px;
+    font-size: 20px;
   }
 
   .button {
-    /* font-size: 2em; */
-    /* padding: 0.2em 1em; */
     height: 80px;
     width: 220px;
-    /* margin-top: auto; */
     margin-top: 64px;
-    /* margin-bottom: 1vh; */
   }
 }
