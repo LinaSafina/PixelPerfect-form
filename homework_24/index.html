@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form Style</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Регистрация</h1>
+      <form class="form" novalidate>
+        <div class="form__wrapper">
+          <label class="form__label" for="email">Email</label>
+          <div class="form__wrapper_input">
+            <span class="email">*</span>
+          <input
+            class="form__input"
+            placeholder="Введите email"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+          <div class="validation email"></div>
+        </div>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="password">Пароль</label>
+          <div class="form__wrapper_input">
+            <span class="password">*</span>
+          <input
+            class="form__input"
+            placeholder="Введите пароль"
+            type="password"
+            name="password"
+            id="password"
+            required
+          />
+          <div class="validation password"></div>
+        </div>
+        </div>
+        <div class="form__wrapper form__wrapper_position_relative">
+          <span class="checkbox">*</span>
+          <input
+            class="form__input form__input_checkbox"
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+          />
+          
+          <div class="form__checkbox-mark"></div>
+          <label class="form__label form__label_checkbox" for="checkbox"
+            >Я согласен с <a href='http://google.com' target='_blank' rel='noopener noreferrer nofollow'>Правилами пользовательского соглашения</a></label
+          >
+          
+        </div>
+        <div class="validation checkbox"></div>
+        <div class="form__wrapper">
+          <button class="button">Регистрация</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
