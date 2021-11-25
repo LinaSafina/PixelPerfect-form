@@ -1,7 +1,4 @@
 const form = document.querySelector("form");
-let isEmailValid = "valid";
-let isPasswordValid = "valid";
-let isCheckboxValid = "valid";
 
 const validationDivs = document.querySelectorAll("div.validation");
 const labels = document.querySelectorAll("label");
@@ -17,9 +14,9 @@ form.addEventListener("submit", (e) => {
   const password = form.elements.password;
   const checkbox = form.elements.checkbox;
 
-  isEmailValid = validateEmail(email.value);
-  isPasswordValid = validatePassword(password.value);
-  isCheckboxValid = validateCheckbox(checkbox);
+  const isEmailValid = validateEmail(email.value);
+  const isPasswordValid = validatePassword(password.value);
+  const isCheckboxValid = validateCheckbox(checkbox);
 
   if (
     isEmailValid === "valid" &&
