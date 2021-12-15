@@ -9,7 +9,6 @@
 }
 
 .modal {
-  overflow-y: auto;
   position: fixed;
   display: flex;
   justify-content: center;
