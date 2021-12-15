@@ -20,16 +20,8 @@ body {
 #root {
   min-height: 100vh;
   display: grid;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-}
-
-.main {
-  grid-area: 'main';
 }
 
 .centered {
@@ -60,7 +52,7 @@ body {
   border-radius: 10%;
   cursor: pointer;
   border: 1px solid #bc4749;
-  margin: 0.3rem;
+  margin: 0.4rem;
   font-size: 1.2rem;
 }
 
